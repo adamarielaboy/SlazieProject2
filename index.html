@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="Assets/CSS/style.css">
   <link rel="stylesheet" href="Assets/CSS/bootstrap.css">
   <link rel="stylesheet" <link href='https://fonts.googleapis.com/css?family=Cabin'type='text/css'>
-  <script src="assets/js/jquery.js" charset="utf-8"></script>
-  <script src="assets/js/bootstrap.js" charset="utf-8"></script>
+  <script type="text/javascript" src="Assets/JavaScript/jquery.js"></script>
+  <script type="text/javascript" src="Assets/JavaScript/bootstrap.js"></script>
+  <script type="text/javascript" src="Assets/JavaScript/javascript.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="Assets/JavaScript/jquery-circle-progress/dist/circle-progress.js"></script>
   <style>
     body {
       font-family: Cabin, sans-serif;
@@ -45,26 +48,22 @@
 
             <!-- <<<STARTS INFO OVERVIEW>>> -->
             <div id="info-overview" class="row">
-              <div class="col-xs-6">
+              <div id="date" class="col-xs-6">
                 <p>
-                  24
                 </p>
-                <span>Monday</span>
+                <span>monday</span>
               </div>
-              <div class="col-xs-6">
-                <p>
-                  25%
-                </p>
-                <span>PROGRESS</span>
+              <div id="progress" class="col-xs-6">
+
               </div>
             </div>
+            <!-- INFO OVERVIEW HAD A DIV OUT OF PLACE; SIGNOFF: MV-->
             <!-- <<<ENDS INFO OVERVIEW>>> -->
 
             <!-- <<<STARTS INFO DIVIDER>>> -->
             <div class="row info-divider">
               <div class="col-xs-6">
-                <p>
-                  fecha
+                <p id="small-date">
                 </p>
               </div>
               <div class="col-xs-6">
@@ -74,6 +73,17 @@
               </div>
             </div>
             <!-- <<<ENDS INFO DIVIDER>>> -->
+            <div class="row">
+              <div class="col-xs-12 task">
+                <div class="task-input">
+                  <label>
+                    <input type="text" name="checkListForm" value="Enter Text Here">
+                    <span id="button">Add!</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
 
             <!-- <<<STARTS TASKS LIST>>> -->
             <div class="row">
@@ -98,9 +108,8 @@
               </div>
             </div>
             <!-- <<<ENDS TASKS LIST>>> -->
-          </div>
-          <!-- <<<ENDS MAIN COMPONENT>>> -->
         </div>
+        <!-- <<<ENDS MAIN COMPONENT>>> -->
       </div>
     </section>
   </main>

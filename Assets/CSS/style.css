@@ -46,7 +46,7 @@
   border-right: 1px solid rgba(0, 0, 0, .2);
 }
 
-#info-overview > div > p {
+#info-overview {
   font-size: 64px;
   margin-bottom: 0;
 }
