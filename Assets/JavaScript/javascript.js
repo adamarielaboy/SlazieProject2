@@ -55,8 +55,10 @@ $(document).ready(function() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     var n = weekday[d.getDay()];
-    var html = "<p>" + big_date.getDate() + "</p>" + "<span>" + n + "</span>";
-    return html;
+    var bigdate = "<p>" + big_date.getDate() + "</p>" + "<span>" + n + "</span>";
+    return bigdate;
+    var smalldate = "<div class='col-xs-6'> <p id='small-date'>" + d.toLocaleDateString() + "</p> </div>";
+    return smalldate;
   };
 
   taskData = function() {
